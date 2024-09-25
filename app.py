@@ -25,6 +25,7 @@ try:
             data['Kode Risk Issue'].str.contains(kata_kunci, case=False, na=False) |
             data['Judul Risk Issue'].str.contains(kata_kunci, case=False, na=False) |
             data['Kategori'].str.contains(kata_kunci, case=False, na=False) |
+            data['Penyebab'].str.contains(kata_kunci, case=False, na=False) |
             data['Kelemahan'].str.contains(kata_kunci, case=False, na=False) 
         ]
         return hasil
